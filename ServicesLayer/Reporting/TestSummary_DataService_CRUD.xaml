@@ -257,7 +257,7 @@
                                             <OutArgument x:TypeArguments="x:String">[AutomationMasterRecord.EngagementType]</OutArgument>
                                           </ui:AssignOperation.To>
                                           <ui:AssignOperation.Value>
-                                            <InArgument x:TypeArguments="x:String">[Row.Item("BinderTypeId").ToString.Trim]</InArgument>
+                                            <InArgument x:TypeArguments="x:String">[Row.Item("Engagement Type").ToString.Trim]</InArgument>
                                           </ui:AssignOperation.Value>
                                         </ui:AssignOperation>
                                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
@@ -265,7 +265,7 @@
                                             <OutArgument x:TypeArguments="x:String">[AutomationMasterRecord.ServiceType]</OutArgument>
                                           </ui:AssignOperation.To>
                                           <ui:AssignOperation.Value>
-                                            <InArgument x:TypeArguments="x:String">[Row.item("Service_Type_Id").ToString.Trim]</InArgument>
+                                            <InArgument x:TypeArguments="x:String">[Row.item("Service Type").ToString.Trim]</InArgument>
                                           </ui:AssignOperation.Value>
                                         </ui:AssignOperation>
                                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
@@ -273,7 +273,7 @@
                                             <OutArgument x:TypeArguments="x:String">[AutomationMasterRecord.TaxSoftware]</OutArgument>
                                           </ui:AssignOperation.To>
                                           <ui:AssignOperation.Value>
-                                            <InArgument x:TypeArguments="x:String">[Row.Item("AccountNumber").ToString.Trim]</InArgument>
+                                            <InArgument x:TypeArguments="x:String">[Row.Item("Tax Software").ToString.Trim]</InArgument>
                                           </ui:AssignOperation.Value>
                                         </ui:AssignOperation>
                                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
@@ -281,7 +281,7 @@
                                             <OutArgument x:TypeArguments="x:String">[AutomationMasterRecord.LeadsheetType]</OutArgument>
                                           </ui:AssignOperation.To>
                                           <ui:AssignOperation.Value>
-                                            <InArgument x:TypeArguments="x:String">[Row.Item("Has_Leadsheet").ToString.trim]</InArgument>
+                                            <InArgument x:TypeArguments="x:String">[Row.Item("Leadsheet Type").ToString.trim]</InArgument>
                                           </ui:AssignOperation.Value>
                                         </ui:AssignOperation>
                                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
@@ -329,7 +329,7 @@
                                             <OutArgument x:TypeArguments="x:String">[AutomationMasterRecord.Uniquereferencenumber]</OutArgument>
                                           </ui:AssignOperation.To>
                                           <ui:AssignOperation.Value>
-                                            <InArgument x:TypeArguments="x:String">[Row.Item("UniqueReference").ToString.Trim]</InArgument>
+                                            <InArgument x:TypeArguments="x:String">[Row.Item("Unique reference number").ToString.Trim]</InArgument>
                                           </ui:AssignOperation.Value>
                                         </ui:AssignOperation>
                                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
@@ -486,7 +486,7 @@
                                       </udam:RecordState>
                                     </uda:CreateEntityRecord.State>
                                   </uda:CreateEntityRecord>
-                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Data Service Reporter ID generated - &quot;+ReportRecord.Id.ToString +&quot; for ref# &quot;+row.Item(&quot;UniqueReference&quot;).ToString]" />
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Data Service Reporter ID generated - &quot;+ReportRecord.Id.ToString +&quot; for ref# &quot;+row.Item(&quot;Unique reference number&quot;).ToString]" />
                                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;**************************************************************************************&quot;]" />
                                 </Sequence>
                               </ActivityAction>
@@ -525,7 +525,7 @@
         <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="716.8,213.6" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
